@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "PWFoundation",
+    defaultLocalization: "en",
     platforms: [
        .iOS(.v16),
     ],

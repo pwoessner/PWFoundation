@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  
+
+  Created by Woessner, Philipp on 06.02.23.
+  
+*/
+
+"Error.Alert.title" = "Ups! That does not look good...";
+"Error.Alert.message" = "iOS developer did nothing wrong here. Errors are always backend related, so reach out to them or try again later.";
+"Error.Alert.ok" = "OK";

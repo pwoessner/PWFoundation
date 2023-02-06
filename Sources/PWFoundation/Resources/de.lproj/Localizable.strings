@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  
+
+  Created by Woessner, Philipp on 06.02.23.
+  
+*/
+
+"Error.Alert.title" = "Ups! Da ist etwas schief gelaufen...";
+"Error.Alert.message" = "Der iOS Entwickler hat hier nichts falsch gemacht. Fehler passieren immer nur im Backend also versuche es später erneut.";
+"Error.Alert.ok" = "OK";
