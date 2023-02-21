@@ -14,4 +14,6 @@ public enum PWSpacing {
     public static let medium: CGFloat = 16
     public static let large: CGFloat = 24
     public static let huge: CGFloat = 48
+
+    static let listThumbnail: CGFloat = 42
 }
