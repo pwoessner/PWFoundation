@@ -13,8 +13,8 @@ extension String {
     }
 }
 
-struct PWFoundationStrings {
-    static let errorAlertTitle = "Error.Alert.title".moduleLocalized
-    static let errorAlertMessage = "Error.Alert.message".moduleLocalized
-    static let errorAlertOk = "Error.Alert.ok".moduleLocalized
+public struct PWFoundationStrings {
+    public static let errorAlertTitle = "Error.Alert.title".moduleLocalized
+    public static let errorAlertMessage = "Error.Alert.message".moduleLocalized
+    public static let errorAlertOk = "Error.Alert.ok".moduleLocalized
 }

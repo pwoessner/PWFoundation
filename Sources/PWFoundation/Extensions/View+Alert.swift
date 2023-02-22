@@ -62,7 +62,7 @@ public struct AlertDetails {
         primaryButtonText: PWFoundationStrings.errorAlertOk
     )
 
-    init(title: String,
+    public init(title: String,
          message: String?,
          primaryButtonText: String,
          secondaryButtonText: String? = nil
