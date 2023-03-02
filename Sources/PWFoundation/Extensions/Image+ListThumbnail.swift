@@ -8,10 +8,14 @@
 import SwiftUI
 
 public extension Image {
-    func listThumbnail() -> some View {
+    func listThumbnail(
+        maxWidth: CGFloat = PWSpacing.listThumbnail
+    ) -> some View {
         self
             .resizable()
-            .frame(width: PWSpacing.listThumbnail, height: PWSpacing.listThumbnail)
-            .clipShape(RoundedRectangle(cornerRadius: PWSpacing.minor))
+            .aspectRatio(contentMode: .fit)
+            .frame(maxWidth: maxWidth)
+            .clipShape(RoundedRectangle(cornerRadius: PWSpacing.micro))
+            .padding(PWSpacing.minor)
     }
 }

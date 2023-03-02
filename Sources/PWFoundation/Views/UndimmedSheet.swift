@@ -1,6 +1,6 @@
 //
 //  UndimmedSheet.swift
-//  ScanSimp
+//  PWFoundation
 //
 //  Created by Woessner, Philipp on 28.02.23.
 //
