@@ -36,21 +36,26 @@ public struct OverlayButton: View {
                 Button(action: action) {
                     Label {
                         Text(text)
-                            .font(.callout)
-                            .fontWeight(.medium)
+                            .font(.headline)
+                            .fontWeight(.semibold)
                             .if(textColor) { text, textColor in
                                 text.foregroundColor(textColor)
                             }
                     } icon: {
                         image
+                            .if(textColor) { text, textColor in
+                                text.tint(textColor)
+                            }
                     }
-                    .padding(PWSpacing.small)
+                    .padding(.vertical, PWSpacing.small)
+                    .padding(.horizontal, PWSpacing.medium)
                 }
                 .if(backgroundColor, transform: { view, color in
-                    view
-                        .background(color.opacity(0.5))
+                    view.background(color)
                 })
-                .background(.thinMaterial)
+                .if(backgroundColor == nil, transform: { view in
+                    view.background(.thinMaterial)
+                })
                 .clipShape(Capsule())
                 .padding()
 
