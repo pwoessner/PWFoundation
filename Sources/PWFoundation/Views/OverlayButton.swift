@@ -56,7 +56,7 @@ public struct OverlayButton: View {
                 .if(backgroundColor == nil, transform: { view in
                     view.background(.thinMaterial)
                 })
-                .clipShape(Capsule())
+                .clipShape(Capsule(style: .continuous))
                 .padding()
 
             }
