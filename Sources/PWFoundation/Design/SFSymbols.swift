@@ -25,11 +25,11 @@ public enum SFSymbol: String {
     case line3HorizontalDecrease = "line.3.horizontal.decrease"
     case plus = "plus"
 
-    static func image(for symbol: SFSymbol) -> Image {
+    public static func image(for symbol: SFSymbol) -> Image {
         Image(systemName: symbol.rawValue)
     }
 
-    static func image(for systemName: String) -> Image {
+    public static func image(for systemName: String) -> Image {
         Image(systemName: systemName)
     }
 
