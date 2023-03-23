@@ -8,10 +8,10 @@
 import Foundation
 
 public extension NumberFormatter {
-    func abbreviate(_ number: Int?, separator: Int = 1_000) -> String? {
+    func abbreviate(_ number: Int?, separator: Double = 1_000) -> String? {
         guard let number else { return nil }
         var scale = 0
-        var shortNumber = number
+        var shortNumber = Double(number)
         while shortNumber / separator > 1 {
             shortNumber = shortNumber / separator
             scale += 1
@@ -34,7 +34,7 @@ public enum Scale: Int {
     var char: String? {
         switch self {
         case .thousand:
-            return "k"
+            return "K"
         case .million:
             return "M"
         case .billion:
