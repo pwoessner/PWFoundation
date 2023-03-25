@@ -1,9 +1,13 @@
+<h1 align="center">
+    PWFoundation
+</h1>
+
+<p align="center">
 [![license: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/pwoessner/PWFoundation/blob/main/LICENSE)
-[![building](https://github.com/github/docs/actions/workflows/swift.yml/badge.svg?branch=main)](https://github.com/pwoessner/PWFoundation/actions/workflows/swift.yml)
+[![building](https://github.com/pwoessner/PWFoundation/actions/workflows/swift.yml/badge.svg?branch=main)](https://github.com/pwoessner/PWFoundation/actions/workflows/swift.yml)
 ![platforms](https://img.shields.io/badge/platform-iOS-lightgrey.svg)
 ![swift-tools Version](https://img.shields.io/badge/Swift-5.7-F16D39.svg)
-
-# PWFoundation
+</p>
 
 `PWFoundation` is a collection of common shared Swift code, utilities, and extensions. It provides useful capabilities to simplify and accelerate your iOS development.
 
