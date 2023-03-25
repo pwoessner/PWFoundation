@@ -10,7 +10,8 @@ import Foundation
 public extension [Double] {
     func normalized() -> [Double]? {
         guard let min = self.min(),
-              let max = self.max() else {
+              let max = self.max(),
+              min != max else {
             return nil
         }
 

@@ -13,6 +13,7 @@ public extension NumberFormatter {
         var scale = 0
         var shortNumber = Double(number)
         while shortNumber / separator > 1 {
+            self.roundingMode = .down
             shortNumber = shortNumber / separator
             scale += 1
         }
