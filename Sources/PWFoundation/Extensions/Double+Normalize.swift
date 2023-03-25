@@ -8,18 +8,13 @@
 import Foundation
 
 public extension [Double] {
-//    func normalize() -> [Double] {
-//        guard let minWins = map(\.wins).min(),
-//              let maxWins = map(\.wins).max() else {
-//            return
-//        }
-//        let diffWins = maxWins - minWins
-//        let diffLosses = maxLosses - minLosses
-//
-//        for (index, champion) in enumerated() {
-//            let normalizedWins = Double(champion.wins - minWins) / Double(diffWins)
-//            let normalizedLosses = Double(champion.losses - minLosses) / Double(diffLosses)
-//            self[index].rating = winWeight * normalizedWins - lossWeight * normalizedLosses
-//        }
-//    }
+    func normalized() -> [Double]? {
+        guard let min = self.min(),
+              let max = self.max() else {
+            return nil
+        }
+
+        let diff = max - min
+        return self.map { ($0 - min) / diff }
+    }
 }
