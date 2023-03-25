@@ -15,5 +15,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Build and run tests
+      - name: build
+        run: xcodebuild build -scheme PWFoundation -destination 'platform=iOS Simulator,name=iPhone 14'
+      - name: test
         run: xcodebuild test -scheme PWFoundation -destination 'platform=iOS Simulator,name=iPhone 14'
