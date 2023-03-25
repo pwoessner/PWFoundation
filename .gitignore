@@ -1,8 +1,23 @@
+## User settings
+xcuserdata/
+
+## Build generated
+build/
+.build/
+DerivedData
+
+## Obj-C/Swift specific
+*.hmap
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Other
 .DS_Store
-/.build
 /Packages
 /*.xcodeproj
-xcuserdata/
 DerivedData/
 .swiftpm/config/registries.json
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata

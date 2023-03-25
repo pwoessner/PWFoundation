@@ -1,4 +1,7 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/pwoessner/PWFoundation/blob/main/LICENSE)
+[![license: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/pwoessner/PWFoundation/blob/main/LICENSE)
+[![building](https://github.com/github/docs/actions/workflows/swift.yml/badge.svg?branch=main)](https://github.com/pwoessner/PWFoundation/actions/workflows/swift.yml)
+![platforms](https://img.shields.io/badge/platform-iOS-lightgrey.svg)
+![swift-tools Version](https://img.shields.io/badge/Swift-5.7-F16D39.svg)
 
 # PWFoundation
 
