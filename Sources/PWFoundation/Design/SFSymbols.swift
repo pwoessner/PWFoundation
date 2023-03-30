@@ -24,6 +24,7 @@ public enum SFSymbol: String {
     case flag = "flag"
     case line3HorizontalDecrease = "line.3.horizontal.decrease"
     case plus = "plus"
+    case listBulletClipboard = "list.bullet.clipboard"
 
     public static func image(for symbol: SFSymbol) -> Image {
         Image(systemName: symbol.rawValue)
