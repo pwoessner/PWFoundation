@@ -37,5 +37,5 @@ public enum SFSymbol: String {
     public var crop: String { self.rawValue + ".crop" }
     public var circle: String { self.rawValue + ".circle" }
     public var fill: String { self.rawValue + ".fill" }
-
+    public var circleFill: String { self.rawValue + ".circle.fill" }
 }
