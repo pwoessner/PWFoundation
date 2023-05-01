@@ -34,7 +34,7 @@ class PWSubBagTests: XCTestCase {
 
         // Act
         sut.dispose()
-        await waitForExpectation()
+        await fulfillment(of: [expectCancel])
 
         // Assert
         XCTAssertEqual(sut.count, 0, "")
