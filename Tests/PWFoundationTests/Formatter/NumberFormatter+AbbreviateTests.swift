@@ -7,6 +7,7 @@
 
 import Foundation
 import XCTest
+import PWFoundation
 
 class NumberFormatterAbbreviateTests: XCTestCase {
     private var sut: NumberFormatter!
