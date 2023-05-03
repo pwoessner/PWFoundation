@@ -18,4 +18,15 @@ public extension Date {
         formatter.dateFormat = format
         return formatter.string(from: self)
     }
+
+    func relativeLocalized(
+        refDate: Date = .now,
+        dateTimeStyle: RelativeDateTimeFormatter.DateTimeStyle = .named,
+        unitsStyle: RelativeDateTimeFormatter.UnitsStyle = .full
+    ) -> String {
+        let formatter = RelativeDateTimeFormatter()
+        formatter.dateTimeStyle = dateTimeStyle
+        formatter.unitsStyle = unitsStyle
+        return formatter.localizedString(for: self, relativeTo: refDate)
+    }
 }
